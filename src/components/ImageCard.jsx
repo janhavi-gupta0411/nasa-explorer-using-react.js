@@ -34,7 +34,7 @@ export default function ImageCard({ item }) {
               {data.center || data.photographer || "NASA"}
             </div>
             <div style={{ marginTop: 8, color: "var(--muted)", fontSize: 13 }}>
-              {data.description ? (data.description.length > 120 ? data.description.slice(0, 117) + "..." : data.description) : "No description."}
+              {data.description ? (data.description.length > 120 ? data.description + "..." : data.description) : "No description."}
             </div>
           </div>
 
@@ -42,7 +42,6 @@ export default function ImageCard({ item }) {
             <Link to={`/image/${encodeURIComponent(nasaId)}`} className="btn primary" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
               View
             </Link>
-            <a className="btn" href={thumb} target="_blank" rel="noreferrer">Open</a>
           </div>
         </div>
       </div>
