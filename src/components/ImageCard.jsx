@@ -32,7 +32,7 @@ export default function ImageCard({ item }) {
               {data.center || data.photographer || "NASA"}
             </div>
             <div style={{ marginTop: 8, color: "var(--muted)", fontSize: 13 }}>
-              {data.description ? (data.description.length > 120 ? data.description + "..." : data.description) : "No description."}
+              {data.description ? (data.description) : "No description."}
             </div>
           </div>
 
