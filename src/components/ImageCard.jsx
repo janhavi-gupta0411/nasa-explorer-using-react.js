@@ -2,12 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function getThumbnail(item) {
-  // Try links first
   if (item.links && item.links.length) {
     const l = item.links.find((x) => x.render === "image" || x.rel === "preview") || item.links[0];
     if (l && l.href) return l.href;
   }
-  // fallback: sometimes assets must be fetched - but for preview we expect links
   return "";
 }
 

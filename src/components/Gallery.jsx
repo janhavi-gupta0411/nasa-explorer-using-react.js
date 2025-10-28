@@ -9,7 +9,6 @@ export default function Gallery({ items }) {
   return (
     <div className="gallery-grid">
       {items.map((item) => {
-        // item structure: { data: [{ ... }], links: [{href, rel}] }
         return <ImageCard key={item.data[0].nasa_id} item={item} />;
       })}
     </div>

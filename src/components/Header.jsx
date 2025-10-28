@@ -14,7 +14,6 @@ export default function Header() {
     <header className="header">
       <div style={{ display: "flex", gap: "0.8rem", alignItems: "center" }}>
         <div className="app-title">
-          <span className="logo-dot" />
           <span style={{fontSize: 40}}> NASA Image Explorer</span>
         </div>
       </div>

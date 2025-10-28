@@ -15,8 +15,6 @@ export default function Detail() {
       setLoading(true);
       setError("");
       try {
-        // The asset endpoint returns array of image URLs; but we also need metadata (title/description).
-        // We'll attempt to fetch the asset, and also do a search by nasa_id to get metadata.
         const [assetRes, metaRes] = await Promise.allSettled([
           fetchAsset(nasaId),
           searchImages(nasaId, 1)
