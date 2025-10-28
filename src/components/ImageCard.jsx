@@ -37,7 +37,7 @@ export default function ImageCard({ item }) {
           </div>
 
           <div style={{ marginTop: 8, width: "100%", display: "flex", gap: 8 }}>
-            <Link to={`/image/${encodeURIComponent(nasaId)}`} className="btn primary" style={{ textDecoration: "none", display: "inline-flex", alignItems: "center" }}>
+            <Link to={`/image/${encodeURIComponent(nasaId)}`} className="btn primary" style={{ display: "inline-flex", alignItems: "center" }}>
               View
             </Link>
           </div>
